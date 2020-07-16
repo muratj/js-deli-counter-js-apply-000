@@ -1,6 +1,9 @@
-function takeANumber(deli, name) {
-  deli.push(name);
-  return 'Welcome, ' + name + '. You are number ' + deli.length + ' in line.';
+let count = 0;
+
+function takeANumber(deli) {
+  count++;
+  deli.push(count);
+  return 'Welcome, ' + count + '. You are number ' + deli.length + ' in line.';
 }
 
 function nowServing(deliLine) {
